@@ -1,0 +1,75 @@
+/* GERAL */
+* {
+    box-sizing: border-box; /* tamanho leva em consideração o padding */
+}
+
+body {
+    background-color: #e4d2e6; /* determina a cor de fundo de um elemento */
+    font-family: 'Lato', Arial, Helvetica, sans-serif; /* determina o tipo de fonte */
+}
+
+a {
+    text-decoration: none; /* define algum tipo de decoração no texto. Valores: overline, line-through, underline, underline overline */
+}
+
+img {
+    width: 85%; /* define o comprimento */
+}
+
+/* FONTS */
+h1 {
+    text-align: right; /* define o alinhamento do texto */
+    font-size: 35px; /* define o tamanho da fonte. Unidades possíveis são px, em, rem, entre outros */
+    text-transform: uppercase; /*define alguma mudança na própria fonte. Valores possíveis: lowercase, uppercase, capitalize */
+}
+
+h2 {
+    text-align: right;
+}
+
+p {
+    width: 430px;
+    margin-bottom: 110px;
+    text-align: right;  
+}
+
+/* UTILITIES */
+.u-margin-small {
+    margin: 5px;
+}
+
+.sobre-conteudo {
+    width: 45%;
+    display: inline-block;
+}
+
+.sobre-imagem {
+    width: 45%;
+    display: inline-block;
+}
+
+.section-sobre {
+   width: 960px;
+   margin: 0 auto; /* macete para deixar elementos block centralizados */
+   margin-top: 100px;
+}
+
+.sobre-conteudo__botoes {
+    text-align: right; /* esse tipo de alinhamento para botões não funciona se for colocado diretamente no elemento <a>. Deve-se colocar essa propriedade no elemento mãe */
+}
+
+.btn {
+    padding: 10px 12px;
+    font-size: 16px;
+}
+
+.btn_roxo {
+    background-color: #5d1277;
+    color: white; /* define a cor do conteúdo do elemento */
+}
+
+.btn_transp {
+    color: #5d1277;
+    border: 1px solid #5d1277; /* cria uma borda no elemento. Ordem de valores: grossura-da-borda tipo-da-borda cor-da-borda. */
+}
+
