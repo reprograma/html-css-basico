@@ -109,10 +109,13 @@ Tag de **imagem**: img |
 #### Github Desktop
 Github é uma rede de repositórios de códigos abertos, muito utilizada por desenvolvedores.
 Para a primeira semana, vamos utilizar a versão software do [Github](https://desktop.github.com/).
+
 ##### Meu primeiro repositório sem afobação
+
 **NO GITHUB.COM**
 1. Crie uma conta em https://github.com
 2. No seu perfil, crie um repositório. Defina o nome do seu repositório, uma descrição e crie em *Create repository*.
+
 **NO GITHUB DESKTOP**
 1. Na interface do *Github Desktop*, efetue o log in na sua conta.
 2. Vá em File > Clone Repository (ou ctrl + shift + O).
