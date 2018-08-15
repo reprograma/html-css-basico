@@ -1,0 +1,66 @@
+/* GERAL */
+* {
+    box-sizing: border-box;
+    color: purple;
+} 
+
+body {
+    font-family: 'Lato', Arial, Helvetica, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+}
+
+ul li, ol li {
+    margin: 5px;
+}
+
+/* UTILITIES */
+.u-margin-left-medium {
+    margin-left: 80px;
+}
+
+/* DESIGN THINKING SECTION */
+
+.header {
+    margin: 15px;
+    text-align: center;
+}
+
+.secao-design {
+    width: 75%;
+    margin: 50px auto;
+}
+
+    .secao-design__img, .secao-design__lista {
+        width: 45%;
+        display: inline-block;
+    }
+
+    .secao-design__lista {
+        vertical-align: top;
+    }
+
+/* BUTTONS */
+.btn {
+    display: block;
+    margin: 10px auto;
+    width: 300px;
+    text-align: center;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.btn-roxo {
+    background-color:purple;
+    color: white;
+}
+
+.btn-transp {
+    border: 1px solid purple;
+}
