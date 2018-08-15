@@ -8,11 +8,11 @@
 ### Aula 01 - Intrudução à HTML e CSS
 
 Iniciaremos com assuntos básicos de estrutura, nomenclatura e anatomia de HTML e CSS.
-- Editores de texto e organização de pastas;
-- HTML: anatomia e introdução de tags;
-- CSS: anatomia e introdução de propriedades;
-- Classes, id, links;
-- [Github Desktop](https://desktop.github.com/).
+- [Editores de texto e organização de pastas](#editores-de-texto);
+- [HTML: anatomia e introdução de tags](#html);
+- [CSS: anatomia e introdução de propriedades](#css);
+- [Classes, id](#classes-e-id);
+- [Github Desktop](#github-desktop).
 
 #### Editores de texto
 Para se modificar um arquivo .html e .css, precisamos de editor de texto. Apesar de que um simples bloco de notas pode ser a ferramenta para criação desses arquivos, vários softwares foram lançados no mercado para gostos dos programadores, oferecendo facilidades e plugins para facilitar o desenvolvimento. Alguns famosos e notáveis são:
@@ -20,6 +20,14 @@ Para se modificar um arquivo .html e .css, precisamos de editor de texto. Apesar
 - [Notepad++](https://notepad-plus-plus.org/);
 - [Atom](https://atom.io/);
 - O que vamos usar durante as aulas é o [Visual Studio Code](https://code.visualstudio.com/);
+
+A estrutura de pastas básicas é:
+> css
+>   style.css
+> img
+>   imagem.jpg
+> index.html
+Ou seja, uma pasta com um arquivo index.html na raiz e duas pastas: uma css para inserção de nossos estilos .css e outra img, para inserção de nossas imagens.
 
 
 #### HTML
@@ -131,12 +139,12 @@ Para a primeira semana, vamos utilizar a versão software do [Github](https://de
 
 Na parte da manhã, teremos contato com a versão desktop do Github, onde vamos subir todos os nossos exercícios a partir desse momento.
 Na parte da tarde, veremos display e listas.
-- [CSS: cascata em external, internal e inline](#);
-- [Metodologia BEM](https://en.bem.info/methodology/html/).
-- Documentação HTML e CSS;
-- Conceito de display inline, block e inline-block;
-- Listas ordenadas e não ordenadas;
-- Pseudo-classes: hover, active, focus e visited;
+- [CSS: cascata em external, internal e inline](#css-external-internal-e-inline);
+- [Metodologia BEM](#método-bem).
+- [Documentação HTML e CSS](#documentação-html-e-css);
+- [Conceito de display inline, block e inline-block](#display-inline-block-e-inline-block);
+- [Listas ordenadas e não ordenadas](#listas-ordenadas-e-não-ordenadas);
+- [Pseudo-classes: hover, active, focus e visited](#pseudo-classes);
 
 #### CSS: external, internal e inline
 A chamada de marcação de estilo pode ser feita de três formas:
@@ -171,9 +179,13 @@ Para trabalharmos questões de hierarquia, vamos tentar ser mais específicas em
 O [método BEM](https://en.bem.info/methodology/quick-start/) é um sistema de nomenclatura de aplicações e documentos web, criado pela Yandex. O método, que define um sistema lógico e coerente de nomenclatura de arquivos e códigos de linguagens como HTML, CSS e Javascript, divide as partes em:
 *BEM : block | element | modifier*
 
+
+
 **block**: propósito. O que é isso? Ele é semanticamente independente de outros elementos. Exemplos são: section, menu, error, button, header, logo, search-form, form.
 - O bloco não deve influenciar seu ambiente, ou seja, não deve haver margin, padding ou position nesse objeto;
 - Eles podem estar um dentro do outro (nesting);
+
+
 
 **element**: uma parte do *block* que não pode ser usado separadamente dele.
 Nome: block-name__element-name, search-form__input, search-form__button.
@@ -185,13 +197,15 @@ São opcionais, nem todos os blocks tem elementos.
 > Block: se a seção de código tem a chance de ser re-utilizada e não depende de outros elementos da página para ser implementado.
 > Element: se a seção de código não pode ser usada separadamente de um parent (block).
 
+
+
 **modifier**: define *aparência*, *estado* ou *comportamento* de um block ou element. Seu nome define sua aparência. Qual o seu tamanho? Qual o seu tema? Exemplos: size_s, theme_islands. Ele é separado do nome do block ou element por um _. Exemplos: block-name_modifier-name e block-name__element-name_modifier-name.
 Usos:
 - Estados: true, false, enabled e disabled. Estados true não precisam de modifier. search-form__button_disabled.
 - Valores: tamanhos, design. search-form__button_size_s, search-form_theme_islands.
 - Modifiers não podem ser usados sozinhos.
 
----
+
 
 **mix**: técnica de usar diferentes entidades de BEM. Combine o comportamento e estilo de múltiplas entidades sem duplicar o código e crie componentes de UI semanticamente, baseado nos já existentes.
 Por exemplo: btn btn_purple. O mix btn  é uma classe independente do btn_purple, e pode ser usada em outros lugares do documento.
@@ -211,15 +225,21 @@ As documentações da MDN estão parcialmente na língua portuguesa. Quem tem co
 
 #### Display inline, block e inline-block
 Toda tag em HTML tem por padrão algum valor de display. Os três mais básicos são inline, block e inline-block, cujo entendimento é de extrema importância para manipulação eficiente de elementos na sua página web.
+
 **Block**: são elementos que "ocupam" toda a largura do elemento pai, fazendo com que não deixe outros elementos do lado dele. Mesmo que seja forçado a ter uma medida menor (a partir de propriedade width), ele não deixa outro elemento na mesma linha horizontal.
 - Podem conter outros tipos de elementos (inline, block e inline-block);
 - Pode estar dentro somente de outros elementos block;
+
 **Inline**: são elementos que ocupam somente o espaço do conteúdo.
 - Não podem conter elementos block;
 - Podem estar dentro de qualquer tipo de elemento (block, inline, inline-block);
 - Não cria linhas novas;
 - Não se consegue definir propriedades de width e height para ele.
+
+
 ![Imagem explicativa dos vários tipos de display](https://i.stack.imgur.com/mGTYI.png)
+
+
 **Inline-block**: são elemento híbridos, que permitem que outros elementos fiquem um ao lado do outro (em linha), mas que também possam receber valores de width e height.
 > Fonte da imagem: https://stackoverflow.com/questions/9189810/css-display-inline-vs-inline-block
 
