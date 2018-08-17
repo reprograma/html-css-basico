@@ -5,6 +5,15 @@
 
 ---
 
+## Issues - como utilizar nesse repositório
+As issues neste repositório podem ser usadas como formas de enviar perguntas acerca do assunto da semana de fundamentos de HTML e CSS.
+Para fazer a sua pergunta, basta escrever um resumo dela na área do título e uma descrição sobre problema ou dúvida.
+
+Na descrição, é recomendável ser o mais específica possível. Se possível, colocar **partes do seu código** em HTML e CSS ou **link para o seu repositório** para referência. Especificar também o **navegador** utilizado e o tamanho de tela.
+Veja o exemplo na aba Issues. Para documentação de formatação de textos do Github, acesse esse [link](https://guides.github.com/features/mastering-markdown/).
+
+---
+
 ### Aula 01 - Intrudução à HTML e CSS
 
 Iniciaremos com assuntos básicos de estrutura, nomenclatura e anatomia de HTML e CSS.
@@ -284,21 +293,142 @@ Tag de **layout**: span | Propriedades de **animação**: transition
 
 ### Aula 03 - HTML5 e Navegação
 
-Vamos falar sobre documentação, o que fazemos quando temos dúvidas, como ler os artigos.
-
-
-
-Na parte da tarde, falaremos sobre HTML semântico e navegação.
+- [Playground para front-end: Codepen](https://codepen.io/).
 - O que é HTML5? HTML semântico e suas tags;
-- Nevegação superior.
+
+#### HTML5 e tags semânticas
+HTML5 foi uma grande atualização da linguagem de markup, feita em 2014, que definiu e criou novas maneiras de se mostrar conteúdo multimídia (vídeo, áudio etc) e deixar o documento mais semântico.
+O que significa deixar nosso documento mais semântico? Significa deixá-lo mais legível para algoritmos de sites de busca e para outros desenvolvedores.
+Ao invés de criar tags div com classes de nav, header, footer, section, foram criadas novas tags com os mesmos nomes.
+Exemplo de um documento sem tags semânticas:
+```html
+<div class="nav">
+    <ul class="menu">
+        <li>Nav 1</li>
+    </ul>
+</div>
+<div class="header">
+    <h1>Título</h1>
+</div>
+<div class="main">
+    <div class="section">
+        <p>Lorem</p>
+    </div>
+</div>
+<div class="footer">
+    Copyright
+</div>
+```
+
+Exemplo com tags semânticas:
+```html
+<nav>
+    <ul class="menu">
+        <li>Nav 1</li>
+    </ul>
+</nav>
+<header>
+    <h1>Título</h1>
+</header>
+<main>
+    <section>
+        <p>Lorem</p>
+    </section>
+</main>
+<footer>
+    Copyright
+</footer>
+```
+Nota-se que nem todas as classes foram transformadas em tags semânticas, como o menu.
+
+Tags semânticas mais usadas são: header, nav, section, article, main e footer.
+![Esquema exemplo de HTML semântico](https://www.w3schools.com/html/img_sem_elements.gif)
+[Lista completa de tags semânticas](https://www.w3schools.com/html/html5_semantic_elements.asp)
+
+
+HTML | CSS
+------------ | -------------
+Tags **semântico**: nav, header, main, section, article, aside, footer | 
 
 ---
 
 ### Aula 04 - Tabelas
 
-Neste dia, vamos praticar os conceitos aprendidos até agora e aprenderemos anatomia e usos de tabelas.
+- Nevegação superior.
 - Tabelas: tags e anatomia;
-- [Playground para front-end: Codepen](https://codepen.io/).
+
+#### Navegação
+Para definir barras de navegação, não precisamos saber de mais nenhuma tag nova. Existe, porém uma maneira específica de criá-las. A mais simples barra superior de navegação se faz com uma tag a e ul, uma definindo o logo e outra o menu de navegação.
+```html
+<nav>
+    <a href="#"><img src="img/logo.png"></a>
+    <ul class="menu">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Sobre</a></li>
+        <li><a href="#">Contato</a></li>
+    </ul>
+</nav>
+```
+
+
+No CSS, as propriedades são mais usadas para alinhamento dos elementos e posicionamento fixo na parte superior da página.
+```css
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.menu {
+    display: inline-block;
+}
+
+.menu li {
+    display: inline-block;
+}
+```
+Essas são as propriedades básicas para alinhar todos os elementos. Ajustes finos são feitos a partir de padding, margin etc.
+
+
+#### Tabelas
+Tabelas são usadas para organização de certos tipos de informação. Sua estrutura no HTML se faz através de tags como table, thead, tbody, tr, td. Saber o que cada sigla significa em português ajuda muito na hora de entender o uso de cada tag.
+- table: tabela;
+- thead: table head, ou **cabeça** de tabela;
+- tbody: table body, ou **corpo** de tabela;
+- tr: table row, ou **linha** de tabela;
+- th: table header, ou **cabeçalho** de tabela;
+- td: table data, ou **dado** de tabela.
+Sendo assim, a estrutura básica de uma tabela é:
+```html
+<table>
+    <thead>
+        <tr>
+            <th>Cabeçalho 1</th>
+            <th>Cabeçalho 2</th>
+            <th>Cabeçalho 3</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Dado de coluna 1</td>
+            <td>Dado de coluna 2</td>
+            <td>Dado de coluna 3</td>
+        </tr>
+    </tbody>
+</table>
+```
+Existe também o tfoot, que define o footer de uma tabela. Para mais informações, consulte a [documentação](https://www.w3schools.com/html/html_tables.asp).
+
+Podemos também definir quantas colunas ou linhas uma única célula (ou td/th) vai ocupar. Para isso, usamos os atributos *colspan* (para colunas) e *rowspan* (para linhas).
+
+> E CSS em tabelas?
+>> Para estilizar nossas tabelas, é comum usar as propriedades de border, padding, text-align. Uma propriedade nova é a [border-collapse](https://www.w3schools.com/cssref/pr_border-collapse.asp), que não deixa as bordas adjacentes "duplicarem". Outra propriedade é o [border-spacing](https://www.w3schools.com/cssref/pr_border-spacing.asp), que define espaçamento entre células (só funciona para border-collapse: separate).
+
+HTML | CSS
+------------ | -------------
+Tags de **tabela**: table, thead, tbody, th, td, tr | Propriedades de **tabela**: border-collapse, border-spacing
+
+
 
 ---
 
