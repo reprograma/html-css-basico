@@ -1,0 +1,88 @@
+/* GERAL */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 13px;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+/* TABLE */
+.pricing {
+    max-width: 940px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    border-bottom: 1px solid #CCC;
+  }
+  
+  .pricing td, .pricing th {
+    border-right: 1px solid #CCC;
+    padding: 10px;
+  }
+  
+  /* TABLE HEADERS */
+  .pricing__heading {
+    font-size: 18px;
+    font-weight: bold;
+    border-bottom: 0;
+    padding-top: 10px;
+  }
+
+  .pricing__freelance, .pricing__small-business, .pricing__blank {
+    color:#FFF;
+    padding:10px;
+    font-size:13px;
+    border-right:1px solid #CCC;
+    border-bottom:0;
+  }
+  
+  .pricing__blank {
+    border-right:0;
+  }
+  
+  .pricing__small-business {
+    background:#0078C1;
+    border-top-left-radius: 3px;
+    border-left:0px;
+  }
+  
+  .pricing__freelance {
+    background:#009E2C;
+    border-top-right-radius: 3px;
+    border-right:0px;
+  }
+
+  /* TABLE BODY */
+  .pricing__compare > tr:nth-child(odd) {
+    background:#F5F5F5;
+  }
+  
+    .tickblue {
+        color:#0078C1;
+    }
+    
+    .tickgreen {
+        color:#009E2C;
+    }
+    
+    .pricing__compare tr td:first-child {
+        text-align: left;
+    }
+  
+  /* BUTTON */
+  .btn__buy {
+    background:#ff5406;
+    padding:10px 20px;
+    font-size:12px;
+    display:inline-block;
+    color:#FFF;
+    text-decoration:none;
+    border-radius:3px;
+    text-transform:uppercase;
+    margin:5px 0 10px 0;
+  }
