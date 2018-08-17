@@ -24,7 +24,7 @@ Iniciaremos com assuntos básicos de estrutura, nomenclatura e anatomia de HTML 
 - [Github Desktop](#github-desktop).
 
 #### Editores de texto
-Para se modificar um arquivo .html e .css, precisamos de editor de texto. Apesar de que um simples bloco de notas pode ser a ferramenta para criação desses arquivos, vários softwares foram lançados no mercado para gostos dos programadores, oferecendo facilidades e plugins para facilitar o desenvolvimento. Alguns famosos e notáveis são:
+Para se modificar um arquivo .html e .css, precisamos de editor de texto. Apesar de que um simples bloco de notas pode ser a ferramenta para criação desses arquivos, vários softwares foram lançados no mercado para gostos dos programado res, oferecendo facilidades e plugins para facilitar o desenvolvimento. Alguns famosos e notáveis são:
 - [Sublime Text](https://www.sublimetext.com/);
 - [Notepad++](https://notepad-plus-plus.org/);
 - [Atom](https://atom.io/);
@@ -293,8 +293,9 @@ Tag de **layout**: span | Propriedades de **animação**: transition
 
 ### Aula 03 - HTML5 e Navegação
 
-- [Playground para front-end: Codepen](https://codepen.io/).
+- [Playground para front-end: Codepen](https://codepen.io/);
 - O que é HTML5? HTML semântico e suas tags;
+- [Coding Dojo, Saiba mais - Link](https://www.devmedia.com.br/o-que-e-o-coding-dojo/30517).
 
 #### HTML5 e tags semânticas
 HTML5 foi uma grande atualização da linguagem de markup, feita em 2014, que definiu e criou novas maneiras de se mostrar conteúdo multimídia (vídeo, áudio etc) e deixar o documento mais semântico.
