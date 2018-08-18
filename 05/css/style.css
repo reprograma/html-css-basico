@@ -1,0 +1,79 @@
+/* GERAL */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+/* FORM */
+.form {
+    width: 500px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+    .form > div {
+        margin-top: 25px;
+    }
+
+    label {
+        display: inline-block;
+        width: 45%;
+        text-align: right;
+        margin-right: 15px;
+        vertical-align: top;
+    }
+
+    input[type="text"], select, input[type="number"] {
+        font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+        border-radius: 2px;
+        border: 1px solid #ccc;
+        height: 30px;
+        padding: 5px;
+    }
+
+    textarea {
+        font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+        border-radius: 2px;
+        border: 1px solid #ccc;
+        padding: 5px;
+    }
+
+/* LAYOUT */
+.half-col {
+    display: inline-block;
+    width: 45%;
+}
+
+/* BUTTON */
+.btn {
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    border: 1px solid #ccc;
+    padding: 10px 30px;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: all .5s;
+    margin-left: 15px;
+}
+
+.btn_grey {
+    background-color: #ccc;
+    color: #4a4a4a;
+}
+
+.btn_purple {
+    background-color: #9013FE;
+    color: white;
+}
+
+.btn_grey:hover {
+    background-color: #999;
+    color: white;
+}
+
+.btn_purple:hover {
+    background-color: #3a006d;
+}
