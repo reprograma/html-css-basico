@@ -5,6 +5,25 @@
 
 ---
 
+
+## Obrigada às nossas contribuidoras!!
+Esse material foi criado colaborativamente pela equipe Reprograma e com a ajuda de voluntárias.
+Nos ajudaram com o layout dos exercícios e implementação no Figma:
+- [Rafaella Volkmann](http://ralfa.me/)
+- [Sandy Zambeli](https://www.behance.net/sandyzambe950b)
+
+Nos ajudaram com a resolução dos exercícios:
+- [Luciana Primante](https://github.com/lprimante)
+- [Monique Rodrigues](https://github.com/MoniqueRodrigues)
+- [Natalia Izui](https://github.com/natizui)
+- [Pamella Azevedo](https://github.com/pamellaazevedo)
+
+
+**Muito obrigada!!**
+
+
+---
+
 ## Issues - como utilizar nesse repositório
 As issues neste repositório podem ser usadas como formas de enviar perguntas acerca do assunto da semana de fundamentos de HTML e CSS.
 Para fazer a sua pergunta, basta escrever um resumo dela na área do título e uma descrição sobre problema ou dúvida.
